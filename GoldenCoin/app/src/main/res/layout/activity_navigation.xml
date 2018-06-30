@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Navigation">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/navigationToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorBarBackground"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@color/colorBarTitle"/>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tblLayout1"
+        android:layout_margin="5dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/nav_account_row"
+            android:layout_margin="5dp"
+            android:onClick="clickAccountRow">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/baseline_person_black_18dp"
+                android:layout_gravity="center|left" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Account"
+                android:textColor="@android:color/background_dark"
+                android:textSize="25dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/nav_banking_row"
+            android:layout_margin="5dp"
+            android:onClick="clickBankingRow">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/baseline_account_balance_black_18dp"
+                android:layout_gravity="center|left" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Banking"
+                android:textColor="@android:color/background_dark"
+                android:textSize="25dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/nav_history_row"
+            android:layout_margin="5dp"
+            android:onClick="clickHistoryRow">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/baseline_history_black_18dp"
+                android:layout_gravity="center|left" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  History"
+                android:textColor="@android:color/background_dark"
+                android:textSize="25dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/nav_notification_row"
+            android:layout_margin="5dp"
+            android:onClick="clickNotificationRow">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/baseline_notification_important_black_18dp"
+                android:layout_gravity="center|left" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Notification"
+                android:textColor="@android:color/background_dark"
+                android:textSize="25dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/nav_setting_row"
+            android:layout_margin="5dp"
+            android:onClick="clickSettingRow">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/baseline_settings_black_18dp"
+                android:layout_gravity="center|left" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Setting"
+                android:textColor="@android:color/background_dark"
+                android:textSize="25dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/nav_exit_row"
+            android:layout_margin="5dp"
+            android:onClick="clickExitRow">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/exit"
+                android:layout_gravity="center|left" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Exit"
+                android:textColor="@android:color/background_dark"
+                android:textSize="25dp" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>

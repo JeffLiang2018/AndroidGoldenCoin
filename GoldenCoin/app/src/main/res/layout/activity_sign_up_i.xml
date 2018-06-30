@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpI">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:id="@+id/relLayout">
+
+        <TextView
+            android:id="@+id/lblTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Create Your Own Account"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="30dp" />
+
+        <ProgressBar
+            android:id="@+id/progBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/lblTitle"
+            android:progress="33"
+            android:visibility="visible"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        tools:layout_editor_absoluteX="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/relLayout">
+
+        <TableRow
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_marginRight="15dp"
+                android:text="Email:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="13"
+                android:inputType="textEmailAddress"
+                android:textSize="15dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_marginRight="15dp"
+                android:text="Password:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="13"
+                android:textSize="15dp"
+                android:inputType="textPassword"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="Confirm Password:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/txtConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="13"
+                android:textSize="15dp"
+                android:inputType="textPassword"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_marginRight="15dp"
+                android:text="Last Name:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/txtSurName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="13"
+                android:textSize="15dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_marginRight="15dp"
+                android:text="First Name:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/txtFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="13"
+                android:textSize="15dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_marginRight="15dp"
+                android:text="Phone No:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/txtPhoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="13"
+                android:inputType="number"
+                android:textSize="15dp"
+                android:maxLength="10"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_marginRight="15dp"
+                android:text="Date of Birth:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/txtDOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="13"
+                android:inputType="date"
+                android:textSize="15dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_marginRight="15dp"
+                android:text="Address 1:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/txtAddr1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="13"
+                android:textSize="15dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_marginRight="15dp"
+                android:text="Address 2:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/txtAddr2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="13" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_marginRight="15dp"
+                android:text="State:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/spnState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+            </Spinner>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_marginRight="15dp"
+                android:text="Country:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/spnCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+            </Spinner>
+        </TableRow>
+    </TableLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="1"
+        android:columnCount="2"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+        <Button
+            android:text="CANCEL"
+            android:id="@+id/btnCancel"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_width="50pt"
+            android:layout_marginLeft="15dp"
+            android:onClick="backClick"/>
+
+        <Button
+            android:text="NEXT"
+            android:id="@+id/btnNext"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_width="50pt"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:onClick="nextClick"/>
+
+    </GridLayout>
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

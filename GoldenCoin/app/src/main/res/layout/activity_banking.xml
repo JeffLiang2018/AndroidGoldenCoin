@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Banking"
+    android:orientation="vertical"
+    android:background="#95D8F0">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/banking_ToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBarBackground"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@color/colorBarTitle" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/transTo_coin">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="  Transfer to Golden Coin"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text=">"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/transTo_bank">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="  Transfer to Your Bank"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text=">"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/auto_deposit">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="  Automatic Deposit"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text=">"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/link_Account">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="  Linked Account"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text=">"
+                android:textSize="24sp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

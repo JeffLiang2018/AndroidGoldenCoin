@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage"
+    android:id="@+id/drawerLayout"
+    android:background="#95D8F0">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include
+            layout="@layout/navigation_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </include>
+
+
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#95D8F0"
+            >
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                >
+
+                <TextView
+                    android:id="@+id/port_value"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:layout_gravity="fill_horizontal"
+                    android:background="#104E8B"
+                    android:textSize="25dp"
+                    android:textColor="@color/white"
+                    android:text="Portfolio Value:"
+                    />
+
+                <TextView
+                    android:id="@+id/btc_text"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:layout_gravity="fill_horizontal"
+                    android:background="@drawable/myrect"
+                    android:backgroundTint="#3CB371"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="25dp"
+                    android:elevation="2dp"
+                    android:text="Bitcoin"
+                    android:onClick="openDetail"
+                    />
+
+                <TextView
+                    android:id="@+id/eth_text"
+
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:layout_gravity="fill_horizontal"
+                    android:background="@drawable/myrect"
+                    android:backgroundTint="#3CB371"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="25dp"
+                    android:elevation="2dp"
+                    android:text="Ethereum"
+                    android:onClick="openDetail"
+                    />
+
+                <TextView
+                    android:id="@+id/bch_text"
+
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:layout_gravity="fill_horizontal"
+                    android:background="@drawable/myrect"
+                    android:backgroundTint="#3CB371"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="25dp"
+                    android:elevation="2dp"
+                    android:text="Bitcoin-Cash"
+                    android:onClick="openDetail"
+                    />
+
+                <TextView
+                    android:id="@+id/ltc_text"
+
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:layout_gravity="fill_horizontal"
+                    android:background="@drawable/myrect"
+                    android:backgroundTint="#3CB371"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="25dp"
+                    android:elevation="2dp"
+                    android:text="Litecoin"
+                    android:onClick="openDetail"
+                    />
+
+                <TextView
+                    android:id="@+id/dgc_text"
+
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:layout_gravity="fill_horizontal"
+                    android:background="@drawable/myrect"
+                    android:backgroundTint="#3CB371"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="25dp"
+                    android:elevation="2dp"
+                    android:text="Dogecoin"
+                    android:onClick="openDetail"
+                    />
+
+            </GridLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/navigation_menu"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header">
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

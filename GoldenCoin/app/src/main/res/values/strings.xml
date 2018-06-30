@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">COEN268FinalProject</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string-array name="state_names">
+        <item>AL - Alabama</item>
+        <item>AK - Alaska</item>
+        <item>AZ - Arizona</item>
+        <item>AR - Arkansas</item>
+        <item>CA - California</item>
+        <item>CO - Colorado</item>
+        <item>CT - Connecticut</item>
+        <item>DE - Delaware</item>
+        <item>FL - Florida</item>
+        <item>GA - Georgia</item>
+        <item>HI - Hawaii</item>
+        <item>ID - Idaho</item>
+        <item>IL - Illinois</item>
+        <item>IN - Indiana</item>
+        <item>IA - Iowa</item>
+        <item>KS - Kansas</item>
+        <item>KY - Kentucky</item>
+        <item>LA - Louisiana</item>
+        <item>ME - Maine</item>
+        <item>MD - Maryland</item>
+        <item>MA - Massachusetts</item>
+        <item>MI - Michigan</item>
+        <item>MN - Minnesota</item>
+        <item>MS - Mississippi</item>
+        <item>MO - Missouri</item>
+        <item>MT - Montana</item>
+        <item>NE - Nebraska</item>
+        <item>NV - Nevada</item>
+        <item>NH - New Hampshire</item>
+        <item>NJ - New Jersey</item>
+        <item>NM - New Mexico</item>
+        <item>NY - New York</item>
+        <item>NC - North Carolina</item>
+        <item>ND - North Dakota</item>
+        <item>OH - Ohio</item>
+        <item>OK - Oklahoma</item>
+        <item>OR - Oregon</item>
+        <item>PA - Pennsylvania</item>
+        <item>RI - Rhode Island</item>
+        <item>SC - South Carolina</item>
+        <item>SD - South Dakota</item>
+        <item>TN - Tennessee</item>
+        <item>TX - Texas</item>
+        <item>UT - Utah</item>
+        <item>VT - Vermont</item>
+        <item>VA - Virginia</item>
+        <item>WA - Washington</item>
+        <item>WV - West Virginia</item>
+        <item>WV - Wisconsin</item>
+        <item>WY - Wyoming</item>
+    </string-array>
+
+    <string-array name="country_names">
+        <item>United Stated</item>
+    </string-array>
+
+    <string-array name="months">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="years">
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+    </string-array>
+
+
+    <string-array name="auth_time">
+        <item>After 1 minute</item>
+        <item>After 5 minutes</item>
+        <item>After 15 minutes</item>
+        <item>After 1 hour</item>
+        <item>After 4 hours</item>
+    </string-array>
+</resources>

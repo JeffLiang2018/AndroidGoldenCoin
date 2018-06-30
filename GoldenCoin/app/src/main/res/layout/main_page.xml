@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#95D8F0"
+    >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        >
+
+        <TextView
+            android:id="@+id/port_value"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_gravity="fill_horizontal"
+            android:background="#104E8B"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:text="Portfolio Value:"
+            />
+
+        <TextView
+            android:id="@+id/btc_text"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/myrect"
+            android:backgroundTint="#3CB371"
+            android:layout_marginBottom="20dp"
+            android:textSize="25dp"
+            android:elevation="2dp"
+            android:text="Bitcoin"
+            android:onClick="openDetail"
+            />
+
+        <TextView
+            android:id="@+id/eth_text"
+
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/myrect"
+            android:backgroundTint="#3CB371"
+            android:layout_marginBottom="20dp"
+            android:textSize="25dp"
+            android:elevation="2dp"
+            android:text="Ethereum"
+            android:onClick="openDetail"
+            />
+
+        <TextView
+            android:id="@+id/bch_text"
+
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/myrect"
+            android:backgroundTint="#3CB371"
+            android:layout_marginBottom="20dp"
+            android:textSize="25dp"
+            android:elevation="2dp"
+            android:text="Bitcoin-Cash"
+            android:onClick="openDetail"
+            />
+
+        <TextView
+            android:id="@+id/ltc_text"
+
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/myrect"
+            android:backgroundTint="#3CB371"
+            android:layout_marginBottom="20dp"
+            android:textSize="25dp"
+            android:elevation="2dp"
+            android:text="Litecoin"
+            android:onClick="openDetail"
+            />
+
+        <TextView
+            android:id="@+id/dgc_text"
+
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/myrect"
+            android:backgroundTint="#3CB371"
+            android:layout_marginBottom="20dp"
+            android:textSize="25dp"
+            android:elevation="2dp"
+            android:text="Dogecoin"
+            android:onClick="openDetail"
+            />
+
+    </GridLayout>
+</ScrollView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_account"
+        android:icon="@mipmap/baseline_person_black_18dp"
+        android:title="Account">
+    </item>
+
+    <item android:id="@+id/nav_banking"
+        android:icon="@mipmap/baseline_account_balance_black_18dp"
+        android:title="Banking">
+    </item>
+
+    <item android:id="@+id/nav_history"
+        android:icon="@mipmap/baseline_history_black_18dp"
+        android:title="History">
+    </item>
+
+    <item android:id="@+id/nav_notification"
+        android:icon="@mipmap/baseline_notification_important_black_18dp"
+        android:title="Notification">
+    </item>
+
+    <item android:id="@+id/nav_setting"
+        android:icon="@mipmap/baseline_settings_black_18dp"
+        android:title="Setting">
+    </item>
+
+    <item android:id="@+id/nav_logout"
+        android:icon="@mipmap/exit"
+        android:title="Log out">
+    </item>
+</menu>
